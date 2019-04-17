@@ -5,7 +5,7 @@ formatters:
 handlers:
   console: {class: logging.StreamHandler, formatter: simple, level: DEBUG, stream: 'ext://sys.stdout'}
   error_file_handler: {backupCount: 20, class: logging.handlers.RotatingFileHandler,
-    encoding: utf8, filename: /home/javier/PycharmProjects/algotrader/algotrader/log/bsk_error.log,
+    encoding: utf8, filename: /app/log/error.log,
     formatter: simple, level: ERROR, maxBytes: 10485760}
   info_file_handler: {backupCount: 20, class: logging.handlers.RotatingFileHandler,
     encoding: utf8, filename: /home/javier/PycharmProjects/algotrader/algotrader/log/bsk_info.log,
